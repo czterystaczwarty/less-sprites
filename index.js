@@ -38,7 +38,7 @@ Sprites.prototype.createSprite = function(sourceDir, sourceFiles, spriteName) {
 	this.lessPath = this.sourceDir + '/' + path.basename(spriteName, '.png') + '.less';
 
 	this.files = [];
-	this.spriteFile = im();
+	this.spriteFile = gm(1, 1, "#ffffffff");
 
 	sourceFiles = this.getSourceFiles(sourceFiles);
 	if (!sourceFiles.length) {
